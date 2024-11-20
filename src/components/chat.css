@@ -1,0 +1,24 @@
+.chat-main-body{
+    min-height: 500px;
+    border-color: red;
+    border-style: solid;
+    overflow-y: scroll;
+    width: 400px;
+}
+
+.chat-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.nav-bar{
+    height: 25px;
+    display: flex;
+    padding-left: 40px;
+    padding-top: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: rgb(218, 218, 218);
+}

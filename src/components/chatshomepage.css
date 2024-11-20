@@ -1,0 +1,268 @@
+.layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-chat-homepage {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.chats-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  border: 1px rgb(224, 224, 224);
+  border-style: solid;
+}
+
+.chats-search-container {
+  width: 100%;
+  height: 16vh;
+
+}
+
+.chats-groups {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-room {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+  padding-left: 10px;
+}
+
+.chat-room:hover {
+  cursor: pointer;
+  background-color: #e9e7e7;
+}
+
+.room-image {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.chats-rooms-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.chat-container {
+  width: 80%;
+  background-size: contain;
+}
+
+.chatbox::-webkit-scrollbar {
+  width: 2px;
+}
+
+.chatbox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.chatbox::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chat-container-not-choosen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+
+.main-chat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-bar {
+  display: flex;
+  background-color: white;
+  height: 7%;
+}
+
+.message-input {
+  width: 98%;
+  height: 100%; 
+  overflow-wrap: break-word;
+  border: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+  outline: none;
+  resize: none; 
+  padding: 10px; 
+  overflow-y: scroll;
+}
+
+.message-input::-webkit-scrollbar {
+  width: 2px;
+}
+
+.message-input::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.message-input::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.message-input::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.message-input-focus {
+  outline: none;
+}
+
+.chat-not-choosen {}
+
+.selfMessageBubble {
+  padding-top: 0.3vh;
+  padding-bottom: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 7vw;
+  max-width: 23vw;
+  word-break: break-all;
+  min-height: 4vh;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(50, 145, 240);
+  align-self: flex-end;
+  justify-content: flex-start;
+}
+
+.incomingMessageBubble {
+  padding-top: 0.3vh;
+  padding-bottom: 0.5vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 7vw;
+  max-width: 23vw;
+  word-break: break-all;
+  min-height: 4vh;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  align-self: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px rgb(224, 224, 224);
+  height: 83%;
+  border-style: solid;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: url('images/defaultChatBackground.jpg');
+}
+
+
+.time-stamp {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 0;
+  font-size: small;
+}
+
+.message-text {
+  align-self: flex-start;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+.chat-name-box {
+  height: 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 30px;
+  align-items: center;
+}
+
+.chat-name {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.add-friend-button {
+  background-color: rgb(46, 144, 242);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.add-friend-button:hover {
+  cursor: pointer;
+}
+
+.chat-room-tooltip {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.send-message-button {
+  border: 0;
+  background-color: white;
+  width: 3.5vw;
+}
+
+.send-message-button:hover{
+  cursor: pointer;
+  background-color: #e6e4e4;
+}
+
+.add-friend-user-container {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+  padding-left: 10px;
+}
+
+.add-friend-container{
+  width: 100%;
+}
